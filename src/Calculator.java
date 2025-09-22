@@ -27,6 +27,9 @@ public class Calculator {
         return x * y;
     }
     private int div(int x, int y) {
+        if(y == 0) {
+            throw new ArithmeticException("Cannot divide by 0!");
+        }
         return x / y;
     }
     private double add(double x, double y) {
@@ -39,6 +42,9 @@ public class Calculator {
         return x * y;
     }
     private double div(double x, double y) {
+        if(y == 0) {
+            throw new ArithmeticException("Cannot divide by 0!");
+        }
         return x / y;
     }
 }
